@@ -59,7 +59,7 @@
 
 ![모델링](https://little-polish-7ff.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff93266b2-aae6-4f18-bf0e-122f973bcc1e%2FUntitled.png?table=block&id=38ccb56b-e01b-4772-8420-dfc7b6ddbc3d&spaceId=3603a399-ae9e-47d0-9870-7786d6f3f89b&width=2000&userId=&cache=v2)
 
-## 🌟구현 페이지
+## 구현 페이지
 
 ### **Main**
 
