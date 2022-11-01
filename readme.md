@@ -125,6 +125,7 @@ function Slide({ id, url, subTitle, Title1, Title2, imgId }) {
 
 [더 자세한 내용은 블로그참조](https://rock7246.tistory.com/8?category=990492)
 <br />
+<br />
 
 
 <h2 align="center" id="login.js">Login.js</h2>
@@ -180,6 +181,7 @@ if (check === true) {
 
 [더 자세한 내용은 블로그참조](https://rock7246.tistory.com/9?category=990492)
 <br />
+<br />
 
 
 <h2 align="center" id="cart.js">Cart.js</h2>
@@ -227,6 +229,7 @@ if (check === true) {
 </p>
 
 [더 자세한 내용은 블로그참조](https://rock7246.tistory.com/10?category=990492)
+<br />
 <br />
 
 
