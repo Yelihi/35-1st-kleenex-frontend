@@ -1,9 +1,11 @@
 <div align="center">
   <img src="public/images/readme/테라로사 슬라이드.gif" width="100%"/>
+</div>
   <br/>
 
 <h1 align="center"> Kleenex </h1>
 <h3 align="center"> 커피 원두 커머스 사이트 TERAROSA를 모티브한 1차 팀프로젝트 </h3> 
+<br />
 
 - 팀 명 : 크리넥스(kleenex)
 <br />
