@@ -8,10 +8,9 @@
 <br />
 
 - 팀 명 : 크리넥스(kleenex)
-<br />
 - 팀 원: [최원익(PM)](https://github.com/Yelihi), [김영수](https://github.com/youngsoon12), [오창훈](https://github.com/och-changhoon), [김도연](https://github.com/kdylsky), [안상현](https://github.com/AhnSang0915)
   <br>
-
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 ## 프로젝트 소개
 
 - 커피 원두 및 식품 커머스 사이트 [TERAROSA](https://terarosa.com/shopinfo/about.html) 클론 프로젝트 입니다.
