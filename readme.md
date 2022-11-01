@@ -66,12 +66,21 @@
 <h2 id="담당하였던part"> :large_blue_diamond: 담당하였던 Part</h2>
 <br />
 
+<p align="justify">
+  기본적으로 <b>mainpage</b> 와 <b>loginpage</b>, <b>cartpage</b>, 그리고 상단 nav 중 <b>search</b> 부분을 공동 작업했습니다.
+</P>
+
+* 로그인 유효성 검사 후 유저 정보 전달.
+* 메인페이지 내 슬라이드 기능 구현과 상세페이지와 연동.
+* 기존 테라로사 사이트에는 없지만 유저 편의성을 위해 검색기능 구현.
+* 기본적인 장바구니 내 상품에 대한 POST, DELETE, PATCH.
+
 
 <h2 align="center" id="main.js">Main.js</h2>
 
 <img src="public/images/readme/테라로사 슬라이드.gif" width="100%" />
 <br>
-<h3 id="main"> :scroll: Description</h3>
+<h3 id="main"> :scroll: Key-Point</h3>
 
 > **Opacity 를 활용한 슬라이드 구현**
 
@@ -132,7 +141,7 @@ function Slide({ id, url, subTitle, Title1, Title2, imgId }) {
 
 <img src="public/images/readme/테라로사 로그인.gif" width="100%" />
 <br>
-<h3 id="main"> :scroll: Description</h3>
+<h3 id="main"> :scroll: Key-Point</h3>
 
 > **아이디 저장 체크 기능**
 
@@ -188,7 +197,7 @@ if (check === true) {
 
 <img src="public/images/readme/테라로사 장바구니.gif" width="100%" />
 <br>
-<h3 id="main"> :scroll: Description</h3>
+<h3 id="main"> :scroll: Key-Point</h3>
 
 > **useEffect 의 라이프사이클 활용 서버의 과부화를 줄여보기**
 
@@ -238,7 +247,7 @@ if (check === true) {
 
 <img src="public/images/readme/테라로사 검색.gif" width="100%" />
 <br>
-<h3 id="main"> :scroll: Description</h3>
+<h3 id="main"> :scroll: Key-Point</h3>
 
 > **커스텀 훅을 활용한 debounce**
 
