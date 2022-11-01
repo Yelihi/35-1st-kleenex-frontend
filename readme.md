@@ -1,6 +1,12 @@
-# TERAROSA
+<div align="center">
+  <img src="public/images/readme/테라로사 슬라이드.gif" width="100%"/>
+  <br/>
 
-- 팀 명 : 크리넥스
+<h1 align="center"> Kleenex </h1>
+<h3 align="center"> 커피 원두 커머스 사이트 TERAROSA를 모티브한 1차 팀프로젝트 </h3> 
+
+- 팀 명 : 크리넥스(kleenex)
+<br />
 - 팀 원: [최원익(PM)](https://github.com/Yelihi), [김영수](https://github.com/youngsoon12), [오창훈](https://github.com/och-changhoon), [김도연](https://github.com/kdylsky), [안상현](https://github.com/AhnSang0915)
   <br>
 
