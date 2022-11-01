@@ -64,8 +64,10 @@
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <h2 id="담당하였던part"> :large_blue_diamond: 담당하였던 Part</h2>
+<br />
 
-### **Main.js**
+
+<h3 align="center" id="main.js">Main.js</h3>
 
 <img src="public/images/readme/테라로사 슬라이드.gif" width="100%" />
 <br>
