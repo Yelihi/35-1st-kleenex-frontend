@@ -10,9 +10,9 @@
 - 팀 명 : 크리넥스(kleenex)
 - 팀 원: [최원익(PM)](https://github.com/Yelihi), [김영수](https://github.com/youngsoon12), [오창훈](https://github.com/och-changhoon), [김도연](https://github.com/kdylsky), [안상현](https://github.com/AhnSang0915)
   <br>
-  
+
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-## 프로젝트 소개
+<h2 id="프로젝트소개"> :book: 프로젝트 소개</h2>
 
 - 커피 원두 및 식품 커머스 사이트 [TERAROSA](https://terarosa.com/shopinfo/about.html) 클론 프로젝트 입니다.
 - 외부 라이브러리를 사용하지 않고 기초 문법과 기초 태그만을 활용하여 기능을 구현하였습니다.
