@@ -67,7 +67,7 @@
 <br />
 
 
-<h3 align="center" id="main.js">Main.js</h3>
+<h2 align="center" id="main.js">Main.js</h2>
 
 <img src="public/images/readme/테라로사 슬라이드.gif" width="100%" />
 <br>
