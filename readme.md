@@ -124,10 +124,10 @@ function Slide({ id, url, subTitle, Title1, Title2, imgId }) {
 
 
 [더 자세한 내용은 블로그참조](https://rock7246.tistory.com/8?category=990492)
+<br />
 
 
-
-### **Login.js**
+<h2 align="center" id="login.js">Login.js</h2>
 
 <img src="public/images/readme/테라로사 로그인.gif" width="100%" />
 <br>
@@ -179,8 +179,10 @@ if (check === true) {
 </p>
 
 [더 자세한 내용은 블로그참조](https://rock7246.tistory.com/9?category=990492)
+<br />
 
-### **Cart.js**
+
+<h2 align="center" id="cart.js">Cart.js</h2>
 
 <img src="public/images/readme/테라로사 장바구니.gif" width="100%" />
 <br>
@@ -225,9 +227,11 @@ if (check === true) {
 </p>
 
 [더 자세한 내용은 블로그참조](https://rock7246.tistory.com/10?category=990492)
+<br />
 
 
-### **Search.js**
+<h2 align="center" id="search.js">Search.js</h2>
+
 
 <img src="public/images/readme/테라로사 검색.gif" width="100%" />
 <br>
