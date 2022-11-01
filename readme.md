@@ -69,7 +69,7 @@
 
 <img src="public/images/readme/테라로사 슬라이드.gif" width="100%" />
 <br>
-<h4 id="main"> : scroll: Description</h4>
+<h4 id="main"> :scroll: Description</h4>
 <p align="justify"> 
  다양한 세계의 커피 원두 및 식품 커머스 사이트 <b>TERAROSA</b>를 모티브로 진행된 1차 팀프로젝트 입니다. 커머스 사이트로서 가장 기본적이고 핵심적인 서비스를 제공하고 있었고, 단순 카페 체인점이 아닌 소비자의 니즈에 맞는 원두를 제작및 수입 판매하는 사이트라는 점에 있어서 흥미를 가지게 되어 모티브 사이트로 선정하였습니다.
  <br />
