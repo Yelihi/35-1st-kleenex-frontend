@@ -231,7 +231,54 @@ if (check === true) {
 <br>
 <h3 id="main"> :scroll: Description</h3>
 
-<p align="justify"> 
-  장바구니의 수량이 변경될때마다 (수량을 증가하거나 감소하거나) 변경된 상태값을 서버에 patch 요청하는 방식으로 로직을 구현하였다가, 만일 사용자가 많다는 가정하에 그 사용자들이 한번씩만 수량을 변경해도 서버에 전달되는 상태값은 많아질것이라 우려되어 고민하였습니다. <br/><br/>
-  이를 해결해보기 위해 useEffect 의 라이프사이클 중 컴포넌트가 화면상에서 지워질떄(종료) 그 때의 수량 데이터를 서버에 전송하는 방법을 떠올려봤습니다.
+> **커스텀 훅을 활용한 debounce**
+
+<p align="justify">
+  검색기능을 구현할 때 검색결과에 따라 실시간으로 데이터를 받아왔어야 했기 때문에, 한글의 모음이 바뀔때마다 데이터가 전송이 되는 문제점이 있었습니다. 단순히 '커피' 라는 단어를 검색할 때도 4번이나 서버에게 요청을 보내게 되어 버려서, 역시나 많은 사람들이 이용을 하게 되면 서버에 과부하가 걸릴 것이라 판단했습니다.
+   <br/><br/>
+  아래 코드처럼 매번 search(사용자가 입력하는 검색값)이 변할때마다 request를 실행하게 됩니다.
 </p>
+
+```js
+  async function request() {
+    const res = await fetch(
+      `${CONFIG_URL}/products/main/search?keywords=${search}`
+    );
+    const result = await res.json();
+    setValues(result.result);
+  }
+  
+    useEffect(() => {
+    request();
+  }, [search]);
+```
+<p align="justify">
+  이를 해결하기 위해서 debounce라는 개념을 활용하여, 일정 딜레이를 두고 데이터 전송이 이루어지도록 하려고 했습니다. 
+   <br/><br/>
+  사용자는 검색값을 그대로 입력하되, 그 입력값이 일정 딜레이를 가지고 반환되도록 하는 커스텀훅을 작성해서 적용하였습니다. 이를 통해 검색값을 바뀌는 과정에서는 서버로 검색값을 전송하지 않고, 검색이 끝나면 약간의 딜레이 후(약 1초) 전송하도록 설정되었습니다. 아래 코드는 작성된 커스텀 훅입니다.
+</p>
+
+```js
+import { useState, useEffect } from "react";
+
+export const useDebounce = (value, delay) => {
+  const [debounceValue, setDebounceValue] = useState(value);
+
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebounceValue(value);
+    }, delay);
+
+    return () => {
+      clearTimeout(handler);
+    };
+  }, [value, delay]);
+
+  return debounceValue;
+};
+```
+
+[더 자세한 내용은 블로그참조](https://rock7246.tistory.com/11?category=990492)
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
