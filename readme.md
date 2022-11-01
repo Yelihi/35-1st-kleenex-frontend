@@ -67,7 +67,15 @@
 
 ### **Main**
 
-![메인](https://little-polish-7ff.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe4e6f6bf-8257-47d4-aa53-ba9871e471ec%2F%25E1%2584%2590%25E1%2585%25A6%25E1%2584%2585%25E1%2585%25A1%25E1%2584%2585%25E1%2585%25A9%25E1%2584%2589%25E1%2585%25A1_main.gif?table=block&id=71607b53-f0c8-4bf7-821a-6a0bde05b4e1&spaceId=3603a399-ae9e-47d0-9870-7786d6f3f89b&userId=&cache=v2)
+<img src="public/images/readme/테라로사 슬라이드.gif" width="100%" />
+<br>
+<h4 id="main"> : scroll: Description</h4>
+<p align="justify"> 
+ 다양한 세계의 커피 원두 및 식품 커머스 사이트 <b>TERAROSA</b>를 모티브로 진행된 1차 팀프로젝트 입니다. 커머스 사이트로서 가장 기본적이고 핵심적인 서비스를 제공하고 있었고, 단순 카페 체인점이 아닌 소비자의 니즈에 맞는 원두를 제작및 수입 판매하는 사이트라는 점에 있어서 흥미를 가지게 되어 모티브 사이트로 선정하였습니다.
+ <br />
+ 커머스 사이트의 특징에 맞게, 결제 전 단계까지 구현하였으며 <b>로그인 -> 메인페이지 -> 검색 -> 상품리스트 -> 상세페이지 -> 장바구니</b> 순으로 이어집니다. React 를 제외한 외부 라이브러리는 사용하지 않았으며, 기존 테라로사 사이트에 없는 검색 기능을 추가하여 사용자가 조금 더 손쉽게 상품결제에 도달할 수 있도록 설계하였습니다. 
+</p>
+
 
 ### **Products**
 
