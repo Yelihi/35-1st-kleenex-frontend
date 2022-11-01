@@ -78,6 +78,7 @@
  <br />
  초기 state 상태를 객체로 저장하고, useEffect 의 의존성 배열에 상태값을 넣어서 슬라이드를 구현하였습니다. 하지만 이렇게 하면 추후 슬라이드 사진이 증가하거나 감소할때 수정하는것이 어려워진다는 것을 깨닫고, 방법을 아래처럼 변경하였습니다.
 </p>
+
 ```js
   const [imgId, setImgId] = useState(1);
 
@@ -101,11 +102,13 @@
       clearInterval(autoSlide);
     };
   }, [imgId]);
-``
+```
+
 <p align="justify"> 
  사진 데이터에 각각의 id 값을 부여합니다. 이후 state 를 id 와 같은 숫자로 지정한뒤, 현 state 와 id 의 일치여부에 따라 클래스 active 를 적용시킵니다.
  <br> 이렇게 구현하게 되면, 만일 사진이 추가된다 한들, 기존 데이터에 추가로 사진을 넣어주기만 하면 됩니다.
 </p>
+
 ```js
 function Slide({ id, url, subTitle, Title1, Title2, imgId }) {
   return (
@@ -115,6 +118,7 @@ function Slide({ id, url, subTitle, Title1, Title2, imgId }) {
         <div className="mainSliderText">
 ```
 <br>
+
 ![더 자세한 내용은 블로그참조](https://rock7246.tistory.com/8?category=990492)
 
 
