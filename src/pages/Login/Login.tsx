@@ -7,6 +7,10 @@ interface User {
   id: string;
   password: string;
 }
+interface IResult {
+  MESSAGE: string;
+  ACCESS_TOKEN: string;
+}
 
 function Login() {
   const [inputValue, setInputValue] = useState<User>({
@@ -60,7 +64,7 @@ function Login() {
         password: inputValue.password,
       }),
     });
-    const result = await request.json();
+    const result: IResult = await request.json();
 
     // 서버로 부터 받아오는 메세지로 판단
     switch (result.MESSAGE) {

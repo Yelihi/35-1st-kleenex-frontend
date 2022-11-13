@@ -1,7 +1,16 @@
 import React from 'react';
 import './slide.scss';
 
-function Slide({ id, url, subTitle, Title1, Title2, imgId }) {
+interface Image {
+  id: number;
+  url: string;
+  subTitle: string;
+  Title1: string;
+  Title2: string;
+  imgId: number;
+}
+
+const Slide = ({ id, url, subTitle, Title1, Title2, imgId }: Image) => {
   return (
     <div className="slide">
       <div className={`mainSliderImage ${imgId === id ? 'active' : ''}`}>
@@ -17,6 +26,6 @@ function Slide({ id, url, subTitle, Title1, Title2, imgId }) {
       </div>
     </div>
   );
-}
+};
 
 export default Slide;

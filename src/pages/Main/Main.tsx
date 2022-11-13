@@ -1,18 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import Slide from './Slide/Slide';
 import ProductCard from '../../components/ProductCard/ProductCard';
-import {
-  IMAGE_DATA,
-  BANNER_CARD_DATA,
-  BOTTOM_LINK_DATA,
-} from '../Main/data/data';
+import { IMAGE_DATA, BANNER_CARD_DATA, BOTTOM_LINK_DATA } from './data/data';
 import { CONFIG_URL } from '../../config';
 import './main.scss';
 
+export interface Image {
+  img_id: number;
+  img_url: string;
+}
+
+export interface Taste {
+  taste_id: number;
+  taste_name: string;
+}
+
+export interface ProductValue {
+  id: number;
+  name: string;
+  eng_name: string;
+  img: Image[];
+  taste: Taste[];
+  roasting_date: string;
+  price: number;
+}
+
 function Main() {
   const [imgId, setImgId] = useState(1);
-  const [values, setValues] = useState([]);
-  const [newValue, setNewValue] = useState([]);
+  const [values, setValues] = useState<ProductValue[] | []>([]);
+  const [newValue, setNewValue] = useState<ProductValue[] | []>([]);
 
   // mock data 가져오기
 
@@ -55,7 +71,7 @@ function Main() {
     };
   }, [imgId]);
 
-  if (values.length) {
+  if (values?.length) {
     return (
       <section className="main" id="home">
         <div className="mainSliderContainer">
@@ -155,7 +171,7 @@ function Main() {
     return (
       <div className="loadingContainer">
         <div className="loadingIcon">
-          <i class="bx bxs-coffee bx-tada" />
+          <i className="bx bxs-coffee bx-tada" />
           <span className="loadingText">커피를 가져오는 중이에요...</span>
         </div>
       </div>

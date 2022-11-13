@@ -1,6 +1,18 @@
+import React from 'react';
 import { useNavigate, useMatch } from 'react-router-dom';
 import { MdOutlineShoppingBag } from 'react-icons/md';
 import './ProductCard.scss';
+
+interface IProps {
+  id: number;
+  img: string;
+  name: string;
+  eng_name: string;
+  taste: string[];
+  roasting_date: string;
+  price: number;
+  cardSize: string;
+}
 
 export default function ProductCard({
   id,
@@ -11,12 +23,12 @@ export default function ProductCard({
   roasting_date,
   price,
   cardSize,
-}) {
+}: IProps) {
   const navigate = useNavigate();
   const mainMatch = useMatch('/main');
   const productMatch = useMatch('/products');
 
-  const goToDetail = e => {
+  const goToDetail = (e: React.MouseEvent<HTMLInputElement>) => {
     e.preventDefault();
 
     if (mainMatch) {

@@ -4,5 +4,7 @@ import Router from './Router';
 import '../src/styles/common.scss';
 import '../src/styles/reset.scss';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(
+  document.getElementById('root') as HTMLDivElement
+);
 root.render(<Router />);
