@@ -3,8 +3,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import { CONFIG_URL } from '../../config';
 import './Login.scss';
 
+interface User {
+  id: string;
+  password: string;
+}
+
 function Login() {
-  const [inputValue, setInputValue] = useState({
+  const [inputValue, setInputValue] = useState<User>({
     id: '',
     password: '',
   });
@@ -16,7 +21,8 @@ function Login() {
   const isInputValueTrue = () => {
     isChecked.current === true
       ? setInputValue(prev => {
-          return { ...prev, id: localStorage.getItem('UserId') };
+          const userId = localStorage.getItem('UserId') as string;
+          return { ...prev, id: userId };
         })
       : setInputValue(prev => {
           return { ...prev, id: '' };
@@ -77,7 +83,7 @@ function Login() {
     }
   };
 
-  const onSubmit = e => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     postLogin();
   };
@@ -87,7 +93,7 @@ function Login() {
   };
 
   // 유효성 검사
-  const onHandleInput = e => {
+  const onHandleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setInputValue({ ...inputValue, [name]: value });
   };
@@ -108,7 +114,7 @@ function Login() {
               <li>
                 <Link to="/main">HOME</Link>
               </li>
-              <i class="bx bxs-chevron-right" />
+              <i className="bx bxs-chevron-right" />
               <li>
                 <Link to="/login">로그인</Link>
               </li>
@@ -150,7 +156,7 @@ function Login() {
                   />
                   <span>아이디 저장</span>
                   <span>
-                    <i class="bx bxs-lock" />
+                    <i className="bx bxs-lock" />
                     보안접속
                   </span>
                 </div>
